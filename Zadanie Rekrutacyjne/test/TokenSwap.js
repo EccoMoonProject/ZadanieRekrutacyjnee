@@ -110,7 +110,7 @@ contract("TokenSwap", (accounts) => {
     const balanceTKA = await TokenAInstance.balanceOf.call(accounts[0]);
     const balanceTKX = await TokenXInstance.balanceOf.call(accounts[0]);
     console.log("balanceTKA::", balanceTKA);
-    assert.equal(balanceTKA, 8);
+    assert.equal(balanceTKA, 3);
     assert.equal(balanceTKX, 1);
   });
 });
