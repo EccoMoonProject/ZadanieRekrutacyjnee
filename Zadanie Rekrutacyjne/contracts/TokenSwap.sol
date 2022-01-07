@@ -86,7 +86,7 @@ contract TokenSwap {
             "sender doesn't have enough Tokens"
         );
 
-        uint256 exchangeA = amountTKX / ratioAX;
+        uint256 exchangeA = amountTKX / (ratioAX * 18/100);
         uint256 exchangeAmount = exchangeA - ((exchangeA * fees) / 100);
 
         require(
